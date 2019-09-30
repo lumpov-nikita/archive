@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="lib/ratcher/css/ratchet.min.css">
+        <script type="text/javascript" src="lib/jquery.min.js"></script>
+        
+        <title>Hello World</title>
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <h1 class="title">Text editor</h1>
+          </header>
+           
+          <div class="content">
+                <div class="card" id="chart" style="display: none;">
+                  Длинна столбца:
+                  <input type="text" id="height_"  value="0" disabled>
+                  Ширина столбца:
+                  <input type="text" id="width_"  value="0" disabled>
+                  Колличество символов:
+                  <input type="text" id="counter-sim"  value="0" disabled>
+                  Колличество слов:
+                  <input type="text" id="counter-lan"  value="0" disabled>
+                  <button class="btn btn-primary btn-block" id="calculate">Посчитать</button>
+                </div>
+                <div class="card" id="share-container">
+                    <textarea id="get-text" placeholder="Your text"> </textarea>
+                    <input id="font-size" type="text" placeholder="Font-size">
+                    <input id="word-spacing" type="text" placeholder="Word-spacing">
+                    <button class="btn btn-positive btn-block" id="transfer">Добавить переносы</button>
+                    <button class="btn btn-negative btn-block" id="transfer-">Убрать переносы</button>
+                    <button class="btn btn-primary btn-block" id="chartbtn">Показать/скрыть график</button>
+                </div>
+                <div class="card" id="text">
+                  
+                </div>
+          </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
+    </body>
+</html>
